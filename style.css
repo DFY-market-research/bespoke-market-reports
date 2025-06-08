@@ -1,0 +1,429 @@
+/* DFY Market Research - Consolidated Styles */
+
+/* Custom CSS Variables */
+:root {
+    --color-main: #F98202;
+    --color-main-hover: #ff992c;
+    --color-accent: #BF70F8;
+    --color-blue: #0EC8E6;
+    --color-yellow: #FCC810;
+    --color-orange: #F98202;
+    --color-red: #F92403;
+    --color-purple: #BF70F8;
+    --color-light-purple: #EDD7FB;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+body, .testimonial-card h5 {
+    font-family: 'Geist', sans-serif;
+}
+
+h5, h6 {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Layout Sections */
+.hero-section {
+    background: linear-gradient(to bottom, #f8f9fa, #f0f2f5);
+    background-color: #f0f2f5;
+    padding: 80px 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-gray {
+    background: linear-gradient(to bottom, #f8f9fa, #f0f2f5);
+    background-color: #f0f2f5;
+}
+
+/* Cards */
+.report-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+}
+
+.gradient-card {
+    background: linear-gradient(135deg, #9733EE, var(--color-main));
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    height: 100%;
+}
+
+.testimonial-card {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--color-main);
+}
+
+/* Contact/Form Cards */
+.contact-info {
+    background: linear-gradient(135deg, #9733EE, var(--color-main));
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    height: 100%;
+}
+
+.contact-item {
+    margin-bottom: 30px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.custom-btn, .nav-link.btn {
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+    padding: 12px 24px;
+}
+
+.btn-outline-dark {
+    padding: 12px 24px;
+}
+
+.btn-primary:hover, 
+.btn-primary:active, 
+.btn-primary:active:focus,
+.btn-primary:focus {
+    background-color: var(--color-main-hover);
+    border-color: var(--color-main-hover);
+}
+
+.btn-dark {
+    background-color: #212529;
+    border-color: #212529;
+    padding: 12px 20px;
+    border: none;
+}
+
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:active:focus,
+.btn-dark:focus {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+/* Colors */
+.text-primary {
+    color: var(--color-main) !important;
+}
+
+.highlight-text {
+    color: #9733EE;
+}
+
+/* Logo */
+.logo {
+    height: 32px;
+}
+
+/* Client Logos */
+.client-logo {
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    margin: 0 20px;
+    filter: grayscale(100%);
+}
+
+.client-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/* Testimonials */
+.testimonial-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-company {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Images */
+.img-fluid.rounded-4.shadow {
+    border-radius: 20px !important;
+    box-shadow: 0 1.5rem 2rem -15px rgba(0, 0, 0, .15) !important;
+}
+
+/* Carousel */
+.carousel-indicators [data-bs-target] {
+    background-color: #6c757d;
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-main);
+}
+
+/* Reports Page Specific */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #6c757d;
+}
+
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.page-header {
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Expert Analysis Cards */
+.analysis-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.analysis-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.analysis-card-image {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.analysis-card-content {
+    padding: 20px;
+}
+
+.analysis-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #212529;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.analysis-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 12px;
+}
+
+.analysis-card .meta {
+    font-size: 0.8rem;
+    color: #868e96;
+    margin-bottom: 16px;
+}
+
+.badge-free {
+    background-color: var(--color-purple);
+    color: white;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.badge-premium {
+    background-color: var(--color-purple);
+    color: white;
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.section-header {
+    margin-bottom: 32px;
+}
+
+.section-header h2 {
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    padding: 48px 32px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.cta-section h2 {
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.cta-section p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mock report covers for analysis cards */
+.report-cover {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.report-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(249,130,2,0.8) 0%, rgba(191,112,248,0.8) 100%);
+}
+
+.report-cover-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.report-cover h6 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.report-cover p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+/* Featured Report Styles */
+.featured-report-cover {
+    position: relative;
+    max-width: 500px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo-desktop {
+        display: none;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .hero-section {
+        padding: 40px 20px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .cta-section {
+        padding: 32px 20px;
+    }
+    
+    .featured-report-cover {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .logo-mobile {
+        display: none;
+    }
+}
