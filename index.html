@@ -435,44 +435,75 @@
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-    // Add this script to all pages before closing </body> tag
-    document.addEventListener('DOMContentLoaded', function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const submitted = urlParams.get('submitted');
+<script>
+// Add this script to all pages before closing </body> tag
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const submitted = urlParams.get('submitted');
+    const newsletter = urlParams.get('newsletter');
+    
+    if (submitted === '1') {
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'alert alert-success alert-dismissible fade show position-fixed';
+        alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
         
-        if (submitted === '1') {
-            const alertDiv = document.createElement('div');
-            alertDiv.className = 'alert alert-success alert-dismissible fade show position-fixed';
-            alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
-            
-            alertDiv.innerHTML = `
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-check-circle text-success me-2"></i>
-                    <div>
-                        <strong>Success!</strong><br>
-                        <small>We've received your submission and will reach out to you shortly.</small>
-                    </div>
+        alertDiv.innerHTML = `
+            <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <div>
+                    <strong>Success!</strong><br>
+                    <small>We've received your submission and will reach out to you shortly.</small>
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            `;
-            
-            document.body.appendChild(alertDiv);
-            
-            setTimeout(() => {
-                if (alertDiv && alertDiv.parentNode) {
-                    alertDiv.classList.remove('show');
-                    setTimeout(() => alertDiv.parentNode?.removeChild(alertDiv), 300);
-                }
-            }, 5000);
-            
-            // Clean URL
-            const url = new URL(window.location);
-            url.searchParams.delete('submitted');
-            window.history.replaceState({}, document.title, url.pathname + url.search);
-        }
-    });
-    </script>
-
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        
+        document.body.appendChild(alertDiv);
+        
+        setTimeout(() => {
+            if (alertDiv && alertDiv.parentNode) {
+                alertDiv.classList.remove('show');
+                setTimeout(() => alertDiv.parentNode?.removeChild(alertDiv), 300);
+            }
+        }, 5000);
+        
+        // Clean URL
+        const url = new URL(window.location);
+        url.searchParams.delete('submitted');
+        window.history.replaceState({}, document.title, url.pathname + url.search);
+    }
+    
+    if (newsletter === '1') {
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'alert alert-info alert-dismissible fade show position-fixed';
+        alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
+        
+        alertDiv.innerHTML = `
+            <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-info me-2"></i>
+                <div>
+                    <strong>Newsletter Subscription Confirmed!</strong><br>
+                    <small>Thank you for subscribing to our newsletter. You'll receive updates in your inbox soon.</small>
+                </div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        
+        document.body.appendChild(alertDiv);
+        
+        setTimeout(() => {
+            if (alertDiv && alertDiv.parentNode) {
+                alertDiv.classList.remove('show');
+                setTimeout(() => alertDiv.parentNode?.removeChild(alertDiv), 300);
+            }
+        }, 5000);
+        
+        // Clean URL
+        const url = new URL(window.location);
+        url.searchParams.delete('newsletter');
+        window.history.replaceState({}, document.title, url.pathname + url.search);
+    }
+});
+</script>
     
 </body></html>
