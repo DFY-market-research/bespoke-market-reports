@@ -437,8 +437,14 @@ h5, h6 {
     /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
     background-image: linear-gradient(to bottom, transparent, black), url('/img/brandbible-bg.png');
     background-size: cover; 
+    color: white;
     background-position: center center;
     padding: 60px 0;
+}
+
+.research-header .text-muted {
+    color: white !important;
+    opacity: 0.6;
 }
 
 .metadata {
