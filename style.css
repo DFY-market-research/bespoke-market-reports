@@ -28,6 +28,10 @@ h5, h6 {
     font-weight: 600;
 }
 
+.sans {
+    font-family: 'Geist', sans-serif;
+}
+
 /* Layout Sections */
 .hero-section {
     background: linear-gradient(to bottom, #f8f9fa, #f0f2f5);
@@ -430,15 +434,28 @@ h5, h6 {
 
 /* Report page */
 .research-header {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+    background-image: linear-gradient(to bottom, transparent, black), url('/img/brandbible-bg.png');
+    background-size: cover; 
+    background-position: center center;
     padding: 60px 0;
 }
 
 .metadata {
     font-size: 0.9rem;
-    color: #6c757d;
+    color: #ffffff80;
     margin-bottom: 1.5rem;
 }
+
+.metadata a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.metadata a:hover {
+    text-decoration: underline;
+}
+
 
 .slide-preview {
     border: 1px solid #e9ecef;
@@ -455,10 +472,32 @@ h5, h6 {
 
 .redacted {
     background: #6c757d;
-    color: #6c757d;
+    color: white;
     padding: 2px 6px;
     border-radius: 3px;
     font-weight: 500;
+}
+
+.redacted {
+    transition: opacity 0.2s ease;
+}
+
+.redacted:hover {
+    text-decoration: underline;
+}
+
+.redacted-popover .popover-body {
+    font-size: 12px;
+    padding: 6px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+}
+
+.redacted-popover .popover {
+    --bs-popover-bg: #333;
+    --bs-popover-border-color: #333;
+    --bs-popover-body-color: white;
 }
 
 .toc-section {
@@ -508,4 +547,14 @@ h5, h6 {
     border-radius: 8px;
     overflow: hidden;
     margin: 20px 0;
+}
+
+.prose p {
+    font-size: 1.1rem;
+    line-height: 1.65;
+}
+
+.prose strong {
+    font-weight: 500;
+    color: var(--color-purple);
 }
