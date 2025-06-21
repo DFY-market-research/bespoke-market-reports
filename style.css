@@ -427,3 +427,85 @@ h5, h6 {
         display: none;
     }
 }
+
+/* Report page */
+.research-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 0;
+}
+
+.metadata {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.slide-preview {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.slide-caption {
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #e9ecef;
+}
+
+.redacted {
+    background: #6c757d;
+    color: #6c757d;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.toc-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.methodology-section {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: 600;
+    color: #212529;
+    cursor: pointer;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+
+.faq-answer {
+    color: #6c757d;
+    line-height: 1.6;
+    padding: 15px;
+    display: none;
+}
+
+.custom-btn {
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 12px 24px;
+}
+
+.market-insight-image {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+}
