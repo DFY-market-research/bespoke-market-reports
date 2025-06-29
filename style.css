@@ -110,6 +110,18 @@ h5, h6 {
     padding: 12px 24px;
 }
 
+.btn-outline-primary {
+    border-color: var(--color-main);
+    color: var(--color-main);
+}
+
+.btn-outline-primary:hover, 
+.btn-outline-primary:active, 
+.btn-outline-primary:active:focus,
+.btn-outline-primary:focus {
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+}
 .btn-outline-dark {
     padding: 12px 24px;
 }
