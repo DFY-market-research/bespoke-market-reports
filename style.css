@@ -165,6 +165,34 @@ h5, h6 {
     color: white;
 }
 
+
+.btn-primary {
+    background: linear-gradient(180deg, #FCBE7C 0%, #FD6605 100%);
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+    padding: 12px 24px !important;
+}
+
+.btn-dark {
+    padding: 12px 24px !important;
+    background: linear-gradient(180deg, #373737 0%, #151515 100%);
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.32);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(180deg, #FDB870 0%, #FC5F00 100%);
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4),
+                inset 0px 0px 1px 1px rgba(255, 255, 255, 0.2),
+                0px 2px 4px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+.btn-dark:hover {
+    background: linear-gradient(180deg, #3D3D3D 0%, #1A1A1A 100%);
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.45),
+                inset 0px 0px 1px 1px rgba(255, 255, 255, 0.28),
+                0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
 /* Colors */
 .text-primary {
     color: var(--color-main) !important;
