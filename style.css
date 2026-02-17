@@ -168,7 +168,8 @@ h5, h6 {
 
 .btn-primary {
     background: linear-gradient(180deg, #FCBE7C 0%, #FD6605 100%);
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+    /* box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25); */
+    box-shadow:  inset 0px 0px 1px 1px rgb(255 255 255 / 35%), inset 0px 0px 4px 1px rgb(255 255 255 / 29%);
     padding: 12px 24px !important;
 }
 
@@ -608,4 +609,5 @@ h5, h6 {
 .prose strong {
     font-weight: 500;
     color: var(--color-purple);
+
 }
