@@ -86,10 +86,10 @@ h5, h6 {
 
 /* Contact/Form Cards */
 .contact-info {
-    background: linear-gradient(135deg, #9733EE, var(--color-main));
+    background-color: #f1f1f1;
     border-radius: 15px;
     padding: 40px;
-    color: white;
+    color: default;
     height: 100%;
 }
 
@@ -611,4 +611,5 @@ h5, h6 {
     color: var(--color-purple);
 
 }
+
 
